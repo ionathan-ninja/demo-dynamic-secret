@@ -17,7 +17,7 @@ jobs:
       id: fetch-dynamic-secrets
       uses: akeyless-community/akeyless-github-action@v1.0.1
       with:
-        access-id: ${{ secrets.AKEYLESS_ACCESS_ID }}
+        access-id: ${{ secrets.ACCESS_ID }}
         dynamic-secrets: |
           - name: "/github_actions/postgres_DS"
             output-name: "postgres_dynamic_secret"
